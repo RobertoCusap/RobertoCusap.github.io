@@ -18,22 +18,27 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+    <header className="fixed top-0 w-full bg-blue-800 text-white border-b border-blue-800 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
-              <Car className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">LTMS</span>
+            <img
+             src="/images/last.png" // Replace with your actual logo path
+             alt="LTMS Logo"
+            className="h-10 w-auto"
+           />
+           <span className="text-xl font-bold text-white-900">LTMS PORTAL</span>
           </Link>
+
 
           {/* Desktop Navigation */}
           <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-gray-700 hover:text-blue-600">E-Learning</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-transparent border-none shadow-none text-white hover:text-blue-300">
+                E-Learning
+              </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="grid w-[400px] p-4">
                     <NavigationMenuLink asChild>
@@ -75,12 +80,9 @@ export function Navbar() {
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <Link
-                    href="/contact"
-                    className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground"
-                  >
-                    Contact
-                  </Link>
+                <Link href="/contact" className="inline-flex h-9 items-center justify-center rounded-md px-4 py-2 text-sm font-medium text-white hover:text-blue-300">
+                  Contact
+                </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -89,7 +91,7 @@ export function Navbar() {
           {/* Desktop Auth Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
             <Link href="/login">
-              <Button variant="ghost" className="text-gray-700 hover:text-blue-600">
+              <Button variant="ghost" className="text-white-700 hover:text-blue-600">
                 Sign In
               </Button>
             </Link>
@@ -125,7 +127,7 @@ export function Navbar() {
                   </div>
                 </div>
 
-                <Link href="/contact" className="flex items-center text-gray-700 hover:text-blue-600">
+                <Link href="/contact" className="flex items-center text-black-700 hover:text-black-600">
                   <Phone className="h-4 w-4 mr-2" />
                   Contact
                 </Link>

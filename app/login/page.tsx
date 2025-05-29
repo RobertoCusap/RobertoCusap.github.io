@@ -55,13 +55,15 @@ export default function LoginPage() {
         </div>
 
         <Card className="shadow-xl border-0">
-          <CardHeader>
-            <CardTitle className="flex items-center">
-              <LogIn className="h-5 w-5 mr-2 text-blue-600" />
-              Sign In
-            </CardTitle>
-            <CardDescription>Enter your credentials to access your account</CardDescription>
-          </CardHeader>
+          <div className="w-full max-w-sm mx-auto">
+            <img
+             src="/images/last.png"
+             alt="Sign In"
+             className="w-1/2 md:w-1/3 lg:w-1/4 pt-5 pb-5 h-auto rounded-xl mx-auto"
+            />
+         </div>
+
+
 
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -80,7 +82,7 @@ export default function LoginPage() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  placeholder="Enter your email"
+                  placeholder="EMAIL OR LTO CLIENT NUMBER"
                 />
               </div>
 
@@ -92,7 +94,7 @@ export default function LoginPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  placeholder="Enter your password"
+                  placeholder="PASSWORD"
                 />
               </div>
 

@@ -18,10 +18,14 @@ export default function HomePage() {
               Land Transportation Management System
             </Badge>
 
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-              Your Gateway to
-              <span className="text-red-600 block">Transportation Services</span>
-            </h1>
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+              Land Transportation Management System
+              <img
+               src="/images/last.png"
+               className="w-1/2 md:w-1/3 lg:w-1/4 pt-5 pb-5 h-auto rounded-xl mx-auto"
+              />
+              <span className="text-black block">LTMS PORTAL</span>
+            </h2>
 
             <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
               Access all Land Transportation Office services online. Register vehicles, apply for licenses, check
