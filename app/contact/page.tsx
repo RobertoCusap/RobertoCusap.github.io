@@ -9,14 +9,14 @@ import { Navbar } from "@/components/navbar"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50">
+    <div className="min-h-screen bg-[url('/images/back.jpg')] bg-cover bg-center bg-no-repeat">
       <Navbar />
 
       <div className="pt-32 pb-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="mb-12 text-center">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-xl text-black max-w-2xl mx-auto">
               Get in touch with our support team for assistance with your transportation needs
             </p>
           </div>
