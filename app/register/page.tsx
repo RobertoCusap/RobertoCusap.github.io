@@ -124,24 +124,24 @@ export default function RegisterPage() {
   )
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50 py-12 px-4">
+    <div className="min-h-screen bg-[url('/images/cars.jpg')] bg-cover bg-center bg-no-repeat bg-gradient-to-br from-blue-50 via-white to-red-50 py-12 px-4">
       <div className="container mx-auto max-w-2xl">
         <div className="mb-8">
-          <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-4">
+          <Link href="/" className="inline-flex items-center text-white hover:text-blue-700 mb-4">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Home
           </Link>
           <h1 className="text-3xl font-bold text-gray-900">Create Your Account</h1>
-          <p className="text-gray-600 mt-2">Join LTMS to access all transportation services</p>
+          <p className="text-white mt-2">Join LTMS to access all transportation services</p>
         </div>
-
+  
         <Card className="shadow-xl border-0 animate-in fade-in-50 duration-500">
           <CardHeader>
             <CardTitle className="flex items-center">
               {step === 0 ? (
                 <>
                   <User className="h-5 w-5 mr-2 text-blue-600" />
-                  Enrollment Type
+                  Registration
                 </>
               ) : step === 1 ? (
                 <>
@@ -430,7 +430,7 @@ export default function RegisterPage() {
         </Card>
 
         <div className="text-center mt-6">
-          <p className="text-gray-600">
+          <p className="text-white">
             Already have an account?{" "}
             <Link href="/login" className="text-blue-600 hover:text-blue-700 font-medium">
               Sign in here

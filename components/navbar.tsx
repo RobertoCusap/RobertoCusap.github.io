@@ -18,7 +18,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 w-full bg-blue-800 text-white border-b border-blue-800 z-50">
+    <header className="fixed top-0 w-full bg-blue-900 text-white border-b border-blue-900 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}

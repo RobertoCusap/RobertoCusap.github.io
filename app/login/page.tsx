@@ -43,18 +43,18 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-red-50 py-12 px-4">
+    <div className="min-h-screen bg-[url('/images/cars.jpg')] bg-cover bg-center bg-no-repeat bg-gradient-to-br from-blue-50 via-white to-red-50 py-12 px-4">
       <div className="container mx-auto max-w-md">
         <div className="mb-8">
-          <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-700 mb-4">
+          <Link href="/" className="inline-flex items-center text-white hover:text-blue-700 mb-4">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Back to Home
           </Link>
           <h1 className="text-3xl font-bold text-gray-900">Welcome Back</h1>
-          <p className="text-gray-600 mt-2">Sign in to your LTMS account</p>
+          <p className="text-white mt-2">Sign in to your LTMS account</p>
         </div>
 
-        <Card className="shadow-xl border-0">
+        <Card className="shadow-xl border-0 bg-white/30 backdrop-blur-md">
           <div className="w-full max-w-sm mx-auto">
             <img
              src="/images/last.png"
@@ -104,7 +104,7 @@ export default function LoginPage() {
             </form>
 
             <div className="mt-6 text-center">
-              <Link href="/forgot-password" className="text-sm text-blue-600 hover:text-blue-700">
+              <Link href="/forgot-password" className="text-sm text-danger hover:text-blue-700">
                 Forgot your password?
               </Link>
             </div>
@@ -112,7 +112,7 @@ export default function LoginPage() {
         </Card>
 
         <div className="text-center mt-6">
-          <p className="text-gray-600">
+          <p className="text-white">
             Don't have an account?{" "}
             <Link href="/register" className="text-blue-600 hover:text-blue-700 font-medium">
               Register here

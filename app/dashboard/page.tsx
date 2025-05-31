@@ -47,17 +47,20 @@ export default function DashboardPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 bg-[url('/images/cars.jpg')] bg-cover bg-center bg-no-repeat ">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200">
+      <header className="bg-blue-900 border-b border-blue-900">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
+              {/* Logo */}
               <Link href="/" className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-red-600 rounded-lg flex items-center justify-center">
-                  <Car className="h-5 w-5 text-white" />
-                </div>
-                <span className="text-xl font-bold text-gray-900">LTMS</span>
+                <img
+                 src="/images/last.png" // Replace with your actual logo path
+                 alt="LTMS Logo"
+                className="h-10 w-auto"
+                />
+                <span className="text-xl font-bold text-white">LTMS PORTAL</span>
               </Link>
               <Badge variant="secondary" className="bg-blue-100 text-blue-800">
                 Dashboard
@@ -66,12 +69,12 @@ export default function DashboardPage() {
 
             <div className="flex items-center space-x-4">
               <Button variant="ghost" size="icon">
-                <Bell className="h-5 w-5" />
+                <Bell className="h-5 w-5 text-white" />
               </Button>
               <Button variant="ghost" size="icon">
-                <Settings className="h-5 w-5" />
+                <Settings className="h-5 w-5 text-white" />
               </Button>
-              <Button variant="ghost" onClick={handleLogout} className="text-red-600 hover:text-red-700">
+              <Button variant="ghost" onClick={handleLogout} className="text-white hover:text-red-700">
                 <LogOut className="h-4 w-4 mr-2" />
                 <span className="hidden sm:inline">Logout</span>
               </Button>
@@ -83,8 +86,8 @@ export default function DashboardPage() {
       <div className="container mx-auto px-4 py-8">
         {/* Welcome Section */}
         <div className="mb-8">
-          <h1 className="text-3xl text-center font-bold text-gray-900 mb-2">Welcome back, {user.firstName}!</h1>
-          <p className="text-center text-gray-600">
+          <h1 className="text-3xl text-center font-bold text-white mb-2">Welcome back, {user.firstName}!</h1>
+          <p className="text-center text-white">
             Manage your transportation services and documents from your dashboard
           </p>
         </div>

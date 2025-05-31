@@ -11,23 +11,23 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-[url('/images/back.jpg')] bg-cover bg-center bg-no-repeat">
+      <section className="pt-32 pb-20 px-4 bg-[url('/images/cars.jpg')] bg-cover bg-center bg-no-repeat">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center space-y-8">
             <Badge variant="secondary" className="bg-blue-100 text-blue-800 px-4 py-2">
               Land Transportation Management System
             </Badge>
 
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
+            <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
               Land Transportation Management System
               <img
                src="/images/last.png"
                className="w-1/2 md:w-1/3 lg:w-1/4 pt-5 pb-5 h-auto rounded-xl mx-auto"
               />
-              <span className="text-black block">LTMS PORTAL</span>
+              <span className="text-white block">LTMS PORTAL</span>
             </h2>
 
-            <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white max-w-3xl mx-auto leading-relaxed">
               Access all Land Transportation Office services online. Register vehicles, apply for licenses, check
               violations, and manage your transportation needs from anywhere, anytime.
             </p>
@@ -123,7 +123,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 px-4 bg-blue-600">
+      <section className="py-20 px-4 bg-blue-900">
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-3 gap-8 text-center text-white">
             <div>
