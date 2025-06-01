@@ -43,7 +43,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[url('/images/cars.jpg')] bg-cover bg-center bg-no-repeat bg-gradient-to-br from-blue-50 via-white to-red-50 py-12 px-4">
+    <div className="min-h-screen bg-[url('/images/cars.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="container mx-auto max-w-md">
         <div className="mb-8">
           <Link href="/" className="inline-flex items-center text-white hover:text-blue-700 mb-4">
